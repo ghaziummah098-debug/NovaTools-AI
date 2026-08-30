@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NovaTools AI — Free AI Tools</title>
+  <meta
+    name="description"
+    content="Free online AI and productivity tools for writing, text, prompts and email."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">✦</span>
+      NovaTools <span>AI</span>
+    </a>
+
+    <nav>
+      <a href="#tools">Tools</a>
+      <a href="#how">How It Works</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a href="#tools" class="nav-button">Try Free</a>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-badge">
+      ✦ 100% FREE TO START
+    </div>
+
+    <h1>
+      Smart tools.<br />
+      <span>Simple results.</span>
+    </h1>
+
+    <p>
+      A growing collection of simple AI and productivity tools
+      designed to save you time and get better results.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#tools" class="primary-button">
+        Explore Tools →
+      </a>
+
+      <a href="#how" class="secondary-button">
+        Learn More
+      </a>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <strong>06</strong>
+        <span>Free Tools</span>
+      </div>
+
+      <div class="stat">
+        <strong>$0</strong>
+        <span>To Start</span>
+      </div>
+
+      <div class="stat">
+        <strong>24/7</strong>
+        <span>Available</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TOOLS -->
+  <section id="tools" class="tools-section">
+
+    <div class="section-header">
+
+      <div>
+        <div class="eyebrow">TOOLBOX</div>
+        <h2>Choose a tool</h2>
+        <p>Everything you need in one simple place.</p>
+      </div>
+
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Search tools..."
+        oninput="searchTools()"
+      />
+
+    </div>
+
+
+    <div class="tools-grid" id="toolsGrid">
+
+      <!-- WORD COUNTER -->
+      <div class="tool-card" data-name="word counter">
+
+        <div class="tool-icon">✍️</div>
+
+        <h3>Word Counter</h3>
+
+        <p>
+          Count words, characters and estimated reading time.
+        </p>
+
+        <button onclick="openTool('wordCounter')">
+          Open Tool →
+        </button>
+
+      </div>
+
+
+      <!-- CASE CONVERTER -->
+      <div class="tool-card" data-name="case converter">
+
+        <div class="tool-icon">Aa</div>
+
+        <h3>Case Converter</h3>
+
+        <p>
+          Convert your text into uppercase, lowercase or title case.
+        </p>
+
+        <button onclick="openTool('caseConverter')">
+          Open Tool →
+        </button>
+
+      </div>
+
+
+      <!-- TEXT CLEANER -->
+      <div class="tool-card" data-name="text cleaner">
+
+        <div class="tool-icon">🧹</div>
+
+        <h3>Text Cleaner</h3>
+
+        <p>
+          Remove unnecessary spaces and clean copied text.
+        </p>
+
+        <button onclick="openTool('textCleaner')">
+          Open Tool →
+        </button>
+
+      </div>
+
+
+      <!-- KEYWORD EXTRACTOR -->
+      <div class="tool-card" data-name="keyword extractor">
+
+        <div class="tool-icon">🔎</div>
+
+        <h3>Keyword Extractor</h3>
+
+        <p>
+          Find the most frequently used keywords in your text.
+        </p>
+
+        <button onclick="openTool('keywordExtractor')">
+          Open Tool →
+        </button>
+
+      </div>
+
+
+      <!-- PROMPT BUILDER -->
+      <div class="tool-card" data-name="prompt builder">
+
+        <div class="tool-icon">⚡</div>
+
+        <h3>Prompt Builder</h3>
+
+        <p>
+          Create structured prompts for ChatGPT and other AI tools.
+        </p>
+
+        <button onclick="openTool('promptBuilder')">
+          Open Tool →
+        </button>
+
+      </div>
+
+
+      <!-- EMAIL BUILDER -->
+      <div class="tool-card" data-name="email builder email generator">
+
+        <div class="tool-icon">✉️</div>
+
+        <h3>Email Draft Builder</h3>
+
+        <p>
+          Create a professional email from a few simple details.
+        </p>
+
+        <button onclick="openTool('emailBuilder')">
+          Open Tool →
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="how-section">
+
+    <div class="eyebrow">HOW IT WORKS</div>
+
+    <h2>Simple. Fast. Useful.</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <span>01</span>
+        <h3>Choose</h3>
+        <p>Select the tool you need.</p>
+      </div>
+
+      <div class="step">
+        <span>02</span>
+        <h3>Enter</h3>
+        <p>Add your text or information.</p>
+      </div>
+
+      <div class="step">
+        <span>03</span>
+        <h3>Get Result</h3>
+        <p>Copy and use your result anywhere.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+
+    <div class="eyebrow">ABOUT NOVATOOLS AI</div>
+
+    <h2>Useful tools without the complexity.</h2>
+
+    <p>
+      NovaTools AI is designed to bring useful online tools into one
+      simple platform. This first version works without paid AI APIs,
+      making it possible to launch with almost zero cost.
+    </p>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div>
+      © 2026 NovaTools AI
+    </div>
+
+    <div>
+      Free tools • Simple results
+    </div>
+
+  </footer>
+
+
+  <!-- MODAL -->
+  <div id="toolModal" class="modal">
+
+    <div class="modal-content">
+
+      <button class="close-button" onclick="closeTool()">
+        ×
+      </button>
+
+      <div id="toolContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
